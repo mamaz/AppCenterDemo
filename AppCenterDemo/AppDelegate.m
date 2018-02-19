@@ -27,6 +27,7 @@
         [MSAnalytics class],
         [MSCrashes class]
     ]];
+    NSLog(@"Test device concurrency on master");
     return YES;
 }
 
