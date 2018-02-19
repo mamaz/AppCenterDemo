@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +22,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [MSAppCenter start:@"26ed4265-e1c4-4f3e-bf97-5a8da1571e17"
+          withServices:@[
+        [MSAnalytics class],
+        [MSCrashes class]
+    ]];
     return YES;
 }
 
