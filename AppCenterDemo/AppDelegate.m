@@ -27,6 +27,9 @@
         [MSAnalytics class],
         [MSCrashes class]
     ]];
+
+    NSLog(@"Show this on DEVELOP branch");
+
     return YES;
 }
 
